@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/r2"
+   >
+
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true" >
+
+        <RelativeLayout
+            android:id="@+id/r3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            >
+
+            <RelativeLayout
+                android:id="@+id/l1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:background="#fcd116"
+                >
+
+                <ImageView
+                    android:id="@+id/imgv"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg2" />
+
+                <EditText
+                    android:id="@+id/search2"
+                    android:layout_width="200dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="200dp"
+
+                    android:background="@drawable/search"
+
+                    android:singleLine="true" >
+
+                    <requestFocus />
+                </EditText>
+
+                <Button
+                    android:id="@+id/searchBtn2"
+                    android:layout_width="70dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginLeft="225dp"
+                    android:background="@drawable/search_button" />
+
+
+
+            </RelativeLayout>
+
+
+                <ListView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/android:list"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="07dp"
+                    android:layout_marginTop="255dp"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="14.0sp"
+                  />
+
+            <ImageView
+                android:id="@+id/imgv2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_centerHorizontal="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/blue"
+                android:layout_alignBottom="@id/r2"
+
+
+                />
+
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+  </RelativeLayout>
